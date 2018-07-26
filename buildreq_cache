@@ -1,0 +1,5 @@
+1.16
+perl(Test::Exception)
+perl(Test::NoWarnings)
+perl(IO::Scalar)
+perl(Sub::Uplevel)
