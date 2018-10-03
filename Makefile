@@ -1,5 +1,5 @@
 PKG_NAME := perl-CGI-Simple
-URL = https://cpan.metacpan.org/authors/id/M/MA/MANWAR/CGI-Simple-1.17.tar.gz
+URL = https://cpan.metacpan.org/authors/id/M/MA/MANWAR/CGI-Simple-1.18.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
