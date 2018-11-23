@@ -4,7 +4,7 @@
 #
 Name     : perl-CGI-Simple
 Version  : 1.21
-Release  : 9
+Release  : 10
 URL      : https://cpan.metacpan.org/authors/id/M/MA/MANWAR/CGI-Simple-1.21.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MA/MANWAR/CGI-Simple-1.21.tar.gz
 Summary  : 'A Simple totally OO CGI interface that is CGI.pm compliant'
@@ -67,10 +67,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.26.1/CGI/Simple.pm
-/usr/lib/perl5/vendor_perl/5.26.1/CGI/Simple/Cookie.pm
-/usr/lib/perl5/vendor_perl/5.26.1/CGI/Simple/Standard.pm
-/usr/lib/perl5/vendor_perl/5.26.1/CGI/Simple/Util.pm
+/usr/lib/perl5/vendor_perl/5.28.0/CGI/Simple.pm
+/usr/lib/perl5/vendor_perl/5.28.0/CGI/Simple/Cookie.pm
+/usr/lib/perl5/vendor_perl/5.28.0/CGI/Simple/Standard.pm
+/usr/lib/perl5/vendor_perl/5.28.0/CGI/Simple/Util.pm
 
 %files dev
 %defattr(-,root,root,-)
