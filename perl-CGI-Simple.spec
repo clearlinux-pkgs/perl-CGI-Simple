@@ -67,10 +67,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.0/CGI/Simple.pm
-/usr/lib/perl5/vendor_perl/5.28.0/CGI/Simple/Cookie.pm
-/usr/lib/perl5/vendor_perl/5.28.0/CGI/Simple/Standard.pm
-/usr/lib/perl5/vendor_perl/5.28.0/CGI/Simple/Util.pm
+/usr/lib/perl5/vendor_perl/5.28.1CGI/Simple.pm
+/usr/lib/perl5/vendor_perl/5.28.1CGI/Simple/Cookie.pm
+/usr/lib/perl5/vendor_perl/5.28.1CGI/Simple/Standard.pm
+/usr/lib/perl5/vendor_perl/5.28.1CGI/Simple/Util.pm
 
 %files dev
 %defattr(-,root,root,-)
