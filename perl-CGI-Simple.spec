@@ -4,10 +4,10 @@
 #
 Name     : perl-CGI-Simple
 Version  : 1.21
-Release  : 16
+Release  : 17
 URL      : https://cpan.metacpan.org/authors/id/M/MA/MANWAR/CGI-Simple-1.21.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MA/MANWAR/CGI-Simple-1.21.tar.gz
-Summary  : 'A Simple totally OO CGI interface that is CGI.pm compliant'
+Summary  : A Simple totally OO CGI interface that is CGI.pm compliant
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
 BuildRequires : buildreq-cpan
@@ -25,6 +25,7 @@ To install this module, run the following commands:
 Summary: dev components for the perl-CGI-Simple package.
 Group: Development
 Provides: perl-CGI-Simple-devel = %{version}-%{release}
+Requires: perl-CGI-Simple = %{version}-%{release}
 
 %description dev
 dev components for the perl-CGI-Simple package.
