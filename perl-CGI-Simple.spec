@@ -4,7 +4,7 @@
 #
 Name     : perl-CGI-Simple
 Version  : 1.21
-Release  : 14
+Release  : 15
 URL      : https://cpan.metacpan.org/authors/id/M/MA/MANWAR/CGI-Simple-1.21.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MA/MANWAR/CGI-Simple-1.21.tar.gz
 Summary  : 'A Simple totally OO CGI interface that is CGI.pm compliant'
