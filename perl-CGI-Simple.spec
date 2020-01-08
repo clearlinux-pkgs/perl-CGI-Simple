@@ -4,12 +4,13 @@
 #
 Name     : perl-CGI-Simple
 Version  : 1.22
-Release  : 18
+Release  : 19
 URL      : https://cpan.metacpan.org/authors/id/M/MA/MANWAR/CGI-Simple-1.22.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MA/MANWAR/CGI-Simple-1.22.tar.gz
-Summary  : A Simple totally OO CGI interface that is CGI.pm compliant
+Summary  : 'A Simple totally OO CGI interface that is CGI.pm compliant'
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
+Requires: perl-CGI-Simple-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(IO::Scalar)
 BuildRequires : perl(Sub::Uplevel)
@@ -26,14 +27,23 @@ Summary: dev components for the perl-CGI-Simple package.
 Group: Development
 Provides: perl-CGI-Simple-devel = %{version}-%{release}
 Requires: perl-CGI-Simple = %{version}-%{release}
-Requires: perl-CGI-Simple = %{version}-%{release}
 
 %description dev
 dev components for the perl-CGI-Simple package.
 
 
+%package perl
+Summary: perl components for the perl-CGI-Simple package.
+Group: Default
+Requires: perl-CGI-Simple = %{version}-%{release}
+
+%description perl
+perl components for the perl-CGI-Simple package.
+
+
 %prep
 %setup -q -n CGI-Simple-1.22
+cd %{_builddir}/CGI-Simple-1.22
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -69,10 +79,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/CGI/Simple.pm
-/usr/lib/perl5/vendor_perl/5.28.2/CGI/Simple/Cookie.pm
-/usr/lib/perl5/vendor_perl/5.28.2/CGI/Simple/Standard.pm
-/usr/lib/perl5/vendor_perl/5.28.2/CGI/Simple/Util.pm
 
 %files dev
 %defattr(-,root,root,-)
@@ -80,3 +86,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 /usr/share/man/man3/CGI::Simple::Cookie.3
 /usr/share/man/man3/CGI::Simple::Standard.3
 /usr/share/man/man3/CGI::Simple::Util.3
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.30.1/CGI/Simple.pm
+/usr/lib/perl5/vendor_perl/5.30.1/CGI/Simple/Cookie.pm
+/usr/lib/perl5/vendor_perl/5.30.1/CGI/Simple/Standard.pm
+/usr/lib/perl5/vendor_perl/5.30.1/CGI/Simple/Util.pm
