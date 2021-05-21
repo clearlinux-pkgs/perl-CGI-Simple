@@ -4,7 +4,7 @@
 #
 Name     : perl-CGI-Simple
 Version  : 1.25
-Release  : 25
+Release  : 26
 URL      : https://cpan.metacpan.org/authors/id/M/MA/MANWAR/CGI-Simple-1.25.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MA/MANWAR/CGI-Simple-1.25.tar.gz
 Summary  : 'A Simple totally OO CGI interface that is CGI.pm compliant'
